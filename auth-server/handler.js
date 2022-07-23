@@ -111,7 +111,7 @@ module.exports.getCalendarEvents = event => {
   return new Promise((resolve, reject) => {
     calendar.events.list(
       {
-        calendarId: "fullstackwebdev@careerfoundry.com", //calendar_id,
+        calendarId: calendar_id,//"fullstackwebdev@careerfoundry.com", //calendar_id,
         auth: oAuth2Client,
         timeMin: new Date().toISOString(),
         singleEvents: true,
