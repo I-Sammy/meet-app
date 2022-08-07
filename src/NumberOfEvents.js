@@ -7,7 +7,7 @@ class NumberOfEvents extends Component {
 
   handleInputChanged = (event) => {
     let actValue = event.target.value; //parseInt(event.target.value)
-    console.log('events:' + actValue);
+    //console.log('events:' + actValue);
     if (actValue > 0 && actValue <= 32) {
       this.setState({
         numberOfEvents: actValue
@@ -28,7 +28,7 @@ class NumberOfEvents extends Component {
 
   render() {
     const { numberOfEvents } = this.state;
-    console.log('events:' + numberOfEvents);
+    //console.log('events:' + numberOfEvents);
     return (
       <div className="numberOfEvents">
         <label htmlFor="events-number">Number of events: </label>

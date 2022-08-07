@@ -50,7 +50,7 @@ class App extends Component {
         <h3 className="subtitle">Search for a city to see its upcoming events:</h3>
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
         <NumberOfEvents updateEvents={this.updateEvents} numberOfEvents={numberOfEvents} />
-        <EventList events={this.state.events} />
+        <EventList events={events} />
       </div>
     );
   }
