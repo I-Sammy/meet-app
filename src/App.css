@@ -2,6 +2,7 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  background-color: #626a85;
 }
 
 .App * {
@@ -63,7 +64,7 @@ input[type="number"] {
 .suggestions > li {
   text-align: left;
   padding: 8px 6px 8px 10px;
-  background-color: #eee;
+  background-color:rgb(207, 224, 235);
   cursor: default;
 }
 
@@ -73,16 +74,17 @@ input[type="number"] {
 }
 
 .suggestions > li:hover {
-  background-color: #bcdcdb;
+  background-color: rgb(214, 213, 218);
 }
 
 .event {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1.5px solid #ccc;
   border-radius: 4px;
   position: relative;
+  
 }
 
 .details-btn {
