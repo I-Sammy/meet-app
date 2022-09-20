@@ -44,9 +44,9 @@ module.exports.getAuthURL = async () => {
   return {
     statusCode: 200,
     headers: {
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+      //"Access-Control-Allow-Headers": "Content-Type",
+      "Access-Control-Allow-Origin": "*"
+      // "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
     },
     body: JSON.stringify({
       authUrl: authUrl,
@@ -82,9 +82,9 @@ module.exports.getAccessToken = async (event) => {
       return {
         statusCode: 200,
         headers: {
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+          //"Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Origin": "*"
+          //"Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         },
         body: JSON.stringify(token),
       };
@@ -95,9 +95,9 @@ module.exports.getAccessToken = async (event) => {
       return {
         statusCode: 500,
         headers: {
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+          //"Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Origin": "*"
+          //"Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         },
         body: JSON.stringify(err),
       };
@@ -137,9 +137,9 @@ module.exports.getCalendarEvents = event => {
       return {
         statusCode: 200,
         headers: {
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+          //"Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Origin": "*"
+          //"Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         },
         body: JSON.stringify({ events: results.data.items }),
       };
@@ -149,9 +149,9 @@ module.exports.getCalendarEvents = event => {
       return {
         statusCode: 500,
         headers: {
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+          // "Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Origin": "*"
+          // "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         },
         body: JSON.stringify(err),
       };
